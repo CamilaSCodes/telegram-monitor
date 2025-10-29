@@ -1,0 +1,12 @@
+# Secret files
+.env
+
+# Pyrogram session files and DB
+*.session
+*.session-journal
+*.db
+__pycache__/
+
+# Temporary media
+*.jpg
+*.png
