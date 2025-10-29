@@ -3,6 +3,8 @@ This repository contains the solution for the Cloudwalk Security Engineer Challe
 
 This project is a containerized automation that monitors specific Telegram groups for financial fraud keywords. It saves all relevant messages to a persistent database and performs Optical Character Recognition (OCR) on images to detect brand mentions or fraud terms in real-time.
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white) ![Google Gemini](https://img.shields.io/badge/google%20gemini-8E75B2?style=for-the-badge&logo=google%20gemini&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+
 ---
 
 ## ✨ Core Features 
@@ -67,6 +69,13 @@ cd telegram-monitor
 
 - Copy the example file: cp .env.example .env (or just rename it).
 
+```
+copy .env.example .env
+```
+```
+notepad .env
+```
+
 - Edit the .env file with your credentials:
 
 ```
@@ -102,8 +111,10 @@ python main.py
 
 A new file, my_account.session, now exists in your folder. This is your saved login.
 
+Once you see `Monitor online. Listening for new messages...`, you can stop the script with `Ctrl+C`.
+
 ### Step 3: Launch with Docker 🐳
-Now for the final step. With Docker Desktop running, execute the following commands:
+Now for the final step. With [Docker Desktop](https://docs.docker.com/desktop/setup/install/windows-install) running, execute the following commands:
 
 #### 1. Build the Docker Image:
 
@@ -112,7 +123,7 @@ docker build -t telegram-monitor .
 ```
 
 > [!IMPORTANT]  
-> The first build is slow (it can take several minutes depending on your internet connection). This is a one-time cost. Thanks to Docker's caching, all subsequent builds will be almost instant.
+> The first build is **slow** (it can take an hour depending on your internet connection). This is a one-time cost. Thanks to Docker's caching, all subsequent builds will be almost instant.
 
 #### 2. Run the Container:
 
