@@ -75,7 +75,7 @@ cd telegram-monitor
 
 - You will get your api_id and api_hash.
 
-### 3. Create .env File:
+#### 3. Create .env File:
 
 - Copy the example file: cp .env.example .env (or just rename it).
 
