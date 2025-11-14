@@ -1,6 +1,8 @@
 # 🛡️ Cloudwalk | Real-Time Telegram Fraud Monitor 
 This repository contains the solution for the Cloudwalk Security Engineer Challenge.
 
+CloudWalk is a global fintech company focused on modernizing payments through cutting-edge technology and large-scale automation. With products like InfinitePay, CloudWalk has built a highly efficient financial ecosystem that leverages AI-driven decision-making, real-time data processing, and intelligent risk management.
+
 This project is a containerized automation that monitors specific Telegram groups for financial fraud keywords. It saves all relevant messages to a persistent database and performs Optical Character Recognition (OCR) on images to detect brand mentions or fraud terms in real-time.
 
 <br>
