@@ -185,7 +185,7 @@ All messages and alerts are saved to the fraud_database.db file in your project 
 
 <div align="center">
   
-**🤖 AI Assisted:** Development and debugging made with ChatGPT & Gemini
+**🤖 AI Assisted:** Development and debugging assisted by ChatGPT & Gemini
 
 **🐍 Code:** 1 Python application file
 
